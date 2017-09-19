@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tabs</title>
+	<style>
+		button {
+			background-color: #0f3460;
+			color: white;
+			font-family: Calibri;
+			float: left;
+			border: none;
+			cursor: pointer;
+			padding: 15px;
+			width: 25%;
+			font-size: 18px;
+			outline: none;
+		}
+		button:hover {
+			background-color: #0a1f38;
+		}
+		
+		#London {background-color: #87D2D8;}
+		#Paris {background-color: #68A37B;}
+		#Tokyo {background-color: #F2EBB4;}
+		#Vienna {background-color: #FE7841;}
+	</style>
+	<script>
+		function openTab () {
+			var i;
+			var tabcontent;
+			var tablinks;
+
+			tabcontent = document.getElementsByTagName('div');
+			
+
+			tablinks = document.getElementsByTagName('button');
+			}
+	</script>
+</head>
+<body>
+	<div id="London">
+		<h3>London</h3>
+		<p>London is the capital of England.</p>
+	</div>
+	<div id="Paris">
+		<h3>Paris</h3>
+		<p>Paris is the capital of France.</p>
+	</div>
+	<div id="Tokyo">
+		<h3>Tokyo</h3>
+		<p>Tokyo is the capital of Japan.</p>
+	</div>
+	<div id="Vienna">
+		<h3>Vienna</h3>
+		<p>Vienna is the capital of Austria</p>
+	</div>
+	<button onclick="openTab('London', this, '#87D2D8')" id="defaultOpen">London</button>
+	<button onclick="openTab('Paris', this, '#68A37B')">Paris</button>
+	<button onclick="openTab('Tokyo', this, '#F2EBB4')">Tokyo</button>
+	<button onclick="openTab('Vienna', this, '#FE7841')">Vienna</button>
+</body>
+</html>
